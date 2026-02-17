@@ -9,3 +9,17 @@ def index(request):
 
 def index2(request, val1 = 0):
     return HttpResponse("value1 = "+str(val1))
+
+def viewbook(request, bookid):
+    #assume these book in a database
+    book1 = {'id':123, 'title': 'Continuous Delivery','authur':'J. Humble and D.Farley'}
+    book2 = {'id':456, 'title': 'Secrets of Revers Engineering', 'author':'E. Eilam'}
+    targetBook = None
+    if book1['id'] == bookid:
+         targetBook = book1
+
+    if book2['id'] == bookid:
+        targetBook= book2
+    
+    context = {'book':targetBook}   #book is a var name accesible by template
+    return render(request, 'bookmodule/show.html', context)
