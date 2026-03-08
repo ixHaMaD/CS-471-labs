@@ -15,6 +15,8 @@ def viewbook(request, bookid):
     book1 = {'id':123, 'title': 'Continuous Delivery','author':'J. Humble and D.Farley'}
     book2 = {'id':456, 'title': 'Secrets of Revers Engineering', 'author':'E. Eilam'}
     book3 = {'id':789, 'title': 'Calculus', 'author':'Hamad. M Alsowayyan'}
+    book4 = {'id':789, 'title': 'Calculus', 'author':'Hamad. M Alsowayyan'}
+    
     if book1['id'] == bookid:
          targetBook = book1
 
