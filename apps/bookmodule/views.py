@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def index(request):
-    name = request.GET.get("name") or "world!"
-    return render(request,"bookmodule/index.html", {"name": name})
+'''def index(request):
+    #name = request.GET.get("name") or "world!"
+    name = "Hamad"
+    return render(request,"bookmodule/index.html", {"name": name})'''
 
 
 def index2(request, val1 = 0):
@@ -27,3 +28,15 @@ def viewbook(request, bookid):
         targetBook= book3
     context = {'book':targetBook}   #book is a var name accesible by template
     return render(request, 'bookmodule/show.html', context)
+
+def index(request):
+    return render(request, "bookmodule/index.html")
+
+def list_books(request):
+    return render(request,'bookmodule/list_books.html')
+
+def viewbook(request, bookId):
+    return render(request, 'bookmodule/one_book.html')
+
+def aboutus(request):
+    return render(request, 'bookmodule/aboutus.html')
