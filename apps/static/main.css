@@ -1,0 +1,27 @@
+.div1{
+    text-align: center;
+}
+
+.Link{
+    text-align: center;
+    padding: 1%;
+    display: block;
+    font-size: 20px;
+}
+
+#link1{
+    background-color: aquamarine;
+    color: red;
+    
+}
+
+#link2{
+    background-color: darkgray;
+    color: bisque;
+}
+
+#link3{
+    background-color: black;
+    color: aliceblue;
+}
+

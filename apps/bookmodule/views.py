@@ -40,3 +40,6 @@ def viewbook(request, bookId):
 
 def aboutus(request):
     return render(request, 'bookmodule/aboutus.html')
+
+def links(request):
+    return render(request, 'bookmodule/links.html')
