@@ -46,3 +46,6 @@ def links(request):
 
 def text(request):
     return render(request, 'bookmodule/text.html')
+
+def listing(request):
+    return render(request, 'bookmodule/listing.html')
