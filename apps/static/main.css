@@ -46,3 +46,31 @@
     background-color:darkcyan;
     color:antiquewhite;
 }
+
+table, th, td {
+    text-align: center;
+    border:1px solid black;
+}
+
+.centerTable{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ 
+    }
+
+.tableText{
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+}
+
+.table2{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tdSize{
+    width: 20px;
+}
