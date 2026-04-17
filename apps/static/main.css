@@ -2,11 +2,23 @@
     text-align: center;
 }
 
+body{
+    background-color: darkslategray;
+    padding: 1px;
+}
+
 .Link{
     text-align: center;
     padding: 1%;
     display: block;
     font-size: 20px;
+}
+.Link:visited{
+    color:purple;
+}
+
+.Link:hover{
+    color: cadetblue;
 }
 
 #link1{
@@ -22,6 +34,6 @@
 
 #link3{
     background-color: black;
-    color: aliceblue;
+    
 }
 
