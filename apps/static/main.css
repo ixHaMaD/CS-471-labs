@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-body{
+.body{
     background-color: darkslategray;
     padding: 1px;
 }
@@ -35,5 +35,10 @@ body{
 #link3{
     background-color: black;
     
+}
+
+.h1{
+    background-color:rgb(44, 213, 208);
+    color:rgb(112, 67, 13);
 }
 

@@ -43,3 +43,6 @@ def aboutus(request):
 
 def links(request):
     return render(request, 'bookmodule/links.html')
+
+def text(request):
+    return render(request, 'bookmodule/text.html')
