@@ -9,13 +9,18 @@
 
 {% if books %}
     <ul>
-        {% for book in books %}
+        <!--{% for obj in books %}
             <li>
                 <strong>ID:</strong> {{ book.id }} <br/>
                 <strong>Title:</strong> {{ book.title }} <br/>
                 <strong>Author:</strong> {{ book.author }}
                 <hr/>
             </li>
+        {% endfor %}
+        -->
+        {% for obj in books %}
+            ID: {{obj.id}}, Title: {{obj.title}}
+        <hr>
         {% endfor %}
     </ul>
 {% else %}
