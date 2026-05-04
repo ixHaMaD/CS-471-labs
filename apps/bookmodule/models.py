@@ -14,6 +14,6 @@ class Address(models.Model):
 class Student(models.Model):
     name = models.CharField(max_length=10)
     age = models.SmallIntegerField(default=20)
-    adress = models.ForeignKey(Address, on_delete=models.CASCADE)
+    address = models.ForeignKey(Address, on_delete=models.CASCADE)
 
 

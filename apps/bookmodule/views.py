@@ -3,7 +3,7 @@ from django.db.models import Q
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import Avg, Sum, Max, Min, Count
-from apps.bookmodule.models import Book
+from apps.bookmodule.models import Book, Student, Address
 
 
 '''def index(request):
@@ -129,4 +129,8 @@ def task5(request):
     test = 'Hello test'
 
     
-    return render(request, "bookmodule/Lab8t6.html", {'data': data})
+    return render(request, "bookmodule/Lab8t5.html", {'data': data})
+
+def task6(request):
+    data = Student.objects.values('address__city').annotate(total=Count('id'))
+    return render(request, "bookmodule/Lab8t6.html", {'data':data})

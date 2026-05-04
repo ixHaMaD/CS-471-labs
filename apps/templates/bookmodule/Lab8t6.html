@@ -1,6 +1,15 @@
-<h2> Books Stats:</h2>
-<p>
-   <b> Number of books: </b> {{ data.total_books }} <br>
-    <b> Total price:</b>     {{ data.total_price }} <br>
-    <b>Maximum price:</b>   {{ data.max_price  }} <br>
-</p>
+<h2>Students per City</h2>
+
+<table>
+    <tr>
+        <th>City</th>
+        <th>Total Students</th>
+    </tr>
+
+    {% for i in data %}
+    <tr>
+        <td>{{ i.address__city }}</td>
+        <td>{{ i.total }}</td>
+    </tr>
+    {% endfor %}
+</table>
