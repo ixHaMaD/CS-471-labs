@@ -7,3 +7,13 @@ class Book(models.Model):
     author = models.CharField(max_length = 50)
     price = models.FloatField(default = 0.0)    
     edition = models.SmallIntegerField(default = 1)
+
+class Address(models.Model):
+    city = models.CharField(max_length=20)
+
+class Student(models.Model):
+    name = models.CharField(max_length=10)
+    age = models.SmallIntegerField(default=20)
+    adress = models.ForeignKey(Address, on_delete=models.CASCADE)
+
+
