@@ -126,7 +126,6 @@ def task5(request):
         max_price = Max('price'),
         min_price = Min('price')
     )
-    test = 'Hello test'
 
     
     return render(request, "bookmodule/Lab8t5.html", {'data': data})
